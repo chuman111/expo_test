@@ -1,4 +1,6 @@
-on:
+name: Expo Tests #Name that will show up in Actions
+
+on: #Triggers for when the workflow will run
   push:
     branches:
       - main
@@ -25,4 +27,5 @@ jobs:
         run: npm install
 
       - name: Create update
-        run: eas update --auto --non-interactive
+        run: eas update --auto 
+  #test: #This is where we'd put tests
