@@ -27,5 +27,5 @@ jobs:
         run: npm install
 
       - name: Create update
-        run: eas update --auto --clear-cache
+        run: eas update --platform android --branch preview --message 'Updating the app'
   #test: #This is where we'd put tests
